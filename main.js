@@ -37,6 +37,7 @@ scene.add(pointLight)
 const controls = new OrbitControls(camera,renderer.domElement)
 controls.minDistance=3
 controls.maxDistance=40
+controls.enablePan = false;
 
 // function addStar(){
 //   const geometry = new THREE.SphereGeometry(0.25,24,24);
