@@ -2,7 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { SphereGeometry } from 'three';
-import starsTexture from './star.jpg';
+import starsTexture from './images/star.jpg';
 
 const scene = new THREE.Scene();//container
 const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -52,7 +52,7 @@ controls.maxDistance=40
 
 
  
-const normalTexture = new THREE.TextureLoader().load('normal.jpg')
+const normalTexture = new THREE.TextureLoader().load('./images/normal.jpg')
 const terrainTexture = new THREE.TextureLoader().load('normal.jpg')
 
 const spaceTexture = new THREE.TextureLoader().load('space.jpg')
@@ -71,7 +71,7 @@ scene.background = cubeTextureLoader.load([
 
 
 
-const sunTexture = new THREE.TextureLoader().load('sun.jpg')
+const sunTexture = new THREE.TextureLoader().load('./images/sun.jpg')
 
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(1,32,32),
@@ -97,8 +97,8 @@ sun.position.z=5
  
 
 
-const earthTexture = new THREE.TextureLoader().load('earth.jpg')
-const specularTexture = new THREE.TextureLoader().load('specular.jpg')
+const earthTexture = new THREE.TextureLoader().load('./images/earth.jpg')
+const specularTexture = new THREE.TextureLoader().load('./images/specular.jpg')
 
 
 
@@ -122,7 +122,7 @@ const earth = new THREE.Mesh(
 
 scene.add(earth);
 
-const moonTexture = new THREE.TextureLoader().load('moon.jpg')
+const moonTexture = new THREE.TextureLoader().load('./images/moon.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(0.2, 32, 32),
@@ -145,7 +145,7 @@ moon.position.x=-2
 moon.position.z=2
 
 
-const atmosphereTexture = new THREE.TextureLoader().load('atmosphere.jpg')
+const atmosphereTexture = new THREE.TextureLoader().load('./images/atmosphere.jpg')
  
 
 
@@ -166,7 +166,7 @@ const atmosphere = new THREE.Mesh(
 
 scene.add(atmosphere);
 
-const glowTexture = new THREE.TextureLoader().load('glow.jpg')
+const glowTexture = new THREE.TextureLoader().load('./images/glow.jpg')
  
 
 
